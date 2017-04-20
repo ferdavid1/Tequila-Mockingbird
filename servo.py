@@ -1,0 +1,22 @@
+import RPi.GPIO as GPIO
+import time
+
+GPIO.setmode(GPIO.BOARD)
+
+GPIO.setup(7, GPIO.OUT)
+
+p = GPIO.PWM(7,50) #pulse width modulation
+p.start(20)
+
+try:
+	while True:
+		p.ChangeDutyCycle(7.5)
+		time.sleep(.2)
+		p.ChangeDutyCycle(12.5)
+		time.sleep(.2)
+		#p.ChangeDutyCycle(2.5)
+		#time.sleep(1)
+except KeyboardInterrupt:
+	p.stop()
+	GPIO.cleanup()
+	print('...Motor stopped')
