@@ -9,3 +9,9 @@
 - program initializes with command 'Tequila'
 - Inspired by the Neuropsychology of birdsong creation
 - Name inspired by the novel To Kill a Mockingbird
+
+# Current Progress:
+- Setting up voicecommand C++ module to accurately respond to keyword 'tequila': changing threshold for best audio capture
+- TO DO:
+  -Set up MIDI interfacing
+  -Write tensorflow music generator script (adapt from Siraj Raval's music generation tutorial on youtube)
