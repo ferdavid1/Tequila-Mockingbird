@@ -1,4 +1,4 @@
-# Birdsong
+# Tequila Mockingbird
 - Program that can 'listen' to any short melody and identify notes, create a short song from it
 - Run on Raspberry Pi 3
 - Written in Python using Google Cloud Voice
