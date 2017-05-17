@@ -14,4 +14,4 @@
 - Setting up voicecommand C++ module to accurately respond to keyword 'tequila': changing threshold for best audio capture
 - TO DO:
   -Set up MIDI interfacing
-  -Write tensorflow music generator script (adapt from Siraj Raval's music generation tutorial on youtube)
+  -Write tensorflow music generator script (adapt from Siraj Raval's music generation tutorial on youtube) (https://github.com/samjabrahams/tensorflow-on-raspberry-pi)
