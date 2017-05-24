@@ -14,9 +14,6 @@
 	- This does not look promising, let's set up Google Cloud Voice constant listening module to respond instead 
 - TO DO:
   -Set up MIDI interfacing
-<<<<<<< HEAD
   	- Use WAV to midi script! (Use BPM script to get BPM parameter)
-  -Write tensorflow music generator script (adapt from Siraj Raval's music generation tutorial on youtube)
-=======
   -Write tensorflow music generator script (adapt from Siraj Raval's music generation tutorial on youtube) (https://github.com/samjabrahams/tensorflow-on-raspberry-pi)
->>>>>>> 9b944617d16ad10ae0bc5876a53b6ad08f342dde
+
