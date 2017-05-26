@@ -1,5 +1,6 @@
 import speech_recognition as sr 
 import pyaudio
+import subprocess
 import wave
  
 FORMAT = pyaudio.paInt16
