@@ -38,6 +38,7 @@ waveFile.close()
 r = sr.Recognizer()
 with sr.AudioFile('sound_file.wav') as source:
     audio = r.record(source) 
+    r.adjust_for_ambient_noise(source)
     with open(r"cred.json", "r") as f:  
         credentials_json = f.read()
         try:
