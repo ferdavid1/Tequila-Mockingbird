@@ -14,7 +14,7 @@ audio = pyaudio.PyAudio()
 # start Recording
 stream = audio.open(format=FORMAT, channels=CHANNELS,
                 rate=RATE, input=True,
-                frames_per_buffer=CHUNK)
+                frames_per_buffer=CHUNK, )
 print ("recording...")
 frames = []
  
@@ -45,8 +45,7 @@ with sr.AudioFile('sound_file.wav') as source:
             answer = r.recognize_google_cloud(audio, credentials_json=credentials_json, language='en-US')
             print(answer)
             if answer == 'tequila ':
-                #exec(open('servo.py').read())
-                print('correct')
+                exec(open('servo.py').read())
         except sr.UnknownValueError:
             print("Google Cloud Speech could not understand audio")
         except sr.RequestError as e:
