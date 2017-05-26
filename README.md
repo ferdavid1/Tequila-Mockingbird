@@ -18,7 +18,7 @@
 - TO DO:
   -Set up MIDI interfacing
   	- Use WAV to midi script! (Use BPM script to get BPM parameter)
-    - Write tensorflow music generator script (adapt from Siraj Raval's music generation tutorial on youtube) (https://github.com/samjabrahams/tensorflow-on-raspberry-pi)
+    - Write tensorflow music generator script (adapt from Siraj Raval's music generation tutorial on youtube) (https://github.com/llSourcell/AI_Composer)
       - to use the demo script, use 'import _pickle as cPickle' to use pickle
       - to do this, use tensorflow for raspberry pi module on github
   	- How to get a large dataset to train on from just the input file? 
