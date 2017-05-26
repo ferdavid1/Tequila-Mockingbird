@@ -12,6 +12,7 @@
 	- To run on raspberry pi, you must use the Pi version of tensorflow! https://github.com/samjabrahams/tensorflow-on-raspberry-pi
 - program initializes with command 'Tequila'
 - Inspired by the Neuropsychology of birdsong creation
+- Bird Whistling Tequila source: The Jon and Zach Show, 2/25/1999 (https://www.youtube.com/watch?v=PyVJzcA1Kds)
 - Name inspired by the novel To Kill a Mockingbird
 
 - TO DO:
