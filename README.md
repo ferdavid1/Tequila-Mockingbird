@@ -9,6 +9,7 @@
 		- middle (red) wire of servo -> Header 5
 		- top (orange) wire of servo -> Header 1 
 - tensorflow neural network generates songs from MIDI input
+	- To run on raspberry pi, you must use the Pi version of tensorflow! https://github.com/samjabrahams/tensorflow-on-raspberry-pi
 - program initializes with command 'Tequila'
 - Inspired by the Neuropsychology of birdsong creation
 - Name inspired by the novel To Kill a Mockingbird
