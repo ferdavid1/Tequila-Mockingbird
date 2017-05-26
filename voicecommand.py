@@ -4,8 +4,8 @@ import wave
  
 FORMAT = pyaudio.paInt16
 CHANNELS = 2
-RATE = 44100
-CHUNK = 1024
+RATE = 32000
+CHUNK = 2048
 RECORD_SECONDS = 3
 WAVE_OUTPUT_FILENAME = "sound_file.wav"
  
@@ -14,7 +14,7 @@ audio = pyaudio.PyAudio()
 # start Recording
 stream = audio.open(format=FORMAT, channels=CHANNELS,
                 rate=RATE, input=True,
-                frames_per_buffer=CHUNK, input_device_index=2)
+                frames_per_buffer=CHUNK)
 print ("recording...")
 frames = []
  
@@ -42,7 +42,9 @@ with sr.AudioFile('sound_file.wav') as source:
     with open(r"cred.json", "r") as f:  
         credentials_json = f.read()
         try:
-            if r.recognize_google_cloud(audio, credentials_json=credentials_json, language='en-US') == 'tequila':
+            answer = r.recognize_google_cloud(audio, credentials_json=credentials_json, language='en-US')
+            print(answer)
+            if answer == 'tequila ':
                 #exec(open('servo.py').read())
                 print('correct')
         except sr.UnknownValueError:
