@@ -2,6 +2,7 @@ import speech_recognition as sr
 import pyaudio
 import subprocess
 import wave
+import os
  
 FORMAT = pyaudio.paInt16
 CHANNELS = 2
@@ -46,7 +47,7 @@ with sr.AudioFile('sound_file.wav') as source:
             answer = r.recognize_google_cloud(audio, credentials_json=credentials_json, language='en-US')
             print(answer)
             if answer == 'tequila ':
-                subprocess.call(['aplay -f S16_LE', 'Tequila.wav'])
+                os.system('aplay -r 48000 Tequila.wav')
                 exec(open('servo.py').read())
         except sr.UnknownValueError:
             print("Google Cloud Speech could not understand audio")
