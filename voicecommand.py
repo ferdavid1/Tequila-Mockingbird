@@ -46,7 +46,7 @@ with sr.AudioFile('sound_file.wav') as source:
             answer = r.recognize_google_cloud(audio, credentials_json=credentials_json, language='en-US')
             print(answer)
             if answer == 'tequila ':
-                subprocess.call(['aplay', 'Tequila.wav'])
+                subprocess.call(['aplay -f S16_LE', 'Tequila.wav'])
                 exec(open('servo.py').read())
         except sr.UnknownValueError:
             print("Google Cloud Speech could not understand audio")
