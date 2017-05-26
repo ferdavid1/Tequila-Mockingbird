@@ -42,7 +42,8 @@ with sr.AudioFile('sound_file.wav') as source:
         credentials_json = f.read()
         try:
             if r.recognize_google_cloud(audio, credentials_json=credentials_json, language='en-US') == 'tequila':
-                exec(open('servo.py').read())
+                #exec(open('servo.py').read())
+                print('correct')
         except sr.UnknownValueError:
             print("Google Cloud Speech could not understand audio")
         except sr.RequestError as e:
