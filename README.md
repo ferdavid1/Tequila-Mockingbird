@@ -5,9 +5,9 @@
 - Utilizing USB Microphone and MIDI input
 - Pi servo controls beak of 3D printed bird
 	- Servo wiring:
-		- bottom (brown) wire of servo -> GPIO (Header 8)
-		- middle (red) wire of servo -> Header 5
-		- top (orange) wire of servo -> Header 1 
+		- bottom (brown) wire of servo -> Header 5 
+		- middle (red) wire of servo -> Header 1
+		- top (orange) wire of servo -> GPIO (Header 8) 
 - tensorflow LSTM Neural Network generates songs from MIDI input
 	- To run on raspberry pi, you must use the Pi version of tensorflow! https://github.com/samjabrahams/tensorflow-on-raspberry-pi
 - program initializes with command 'Tequila'

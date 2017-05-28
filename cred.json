@@ -1,1 +1,13 @@
-insert your google cloud credentials here!
+{
+  "type": "service_account",
+  "project_id": "tidy-apricot-166922",
+  "private_key_id": "c5c572fef5b4454318e0a3519e7b1d5921d76cdb",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCeY1/yCLZqyo0F\n+ksV2fbNNFa53jCDYtnz5uVDOnszzt6IAkSow39NgMaOR9e6fXuZbYIiOAujzO5k\np/V+bSa68wJ63JM1mCJozRxSqc52ZszmyRwvB+w0cPkXbH2WuViSX0q1ek/bVL6v\ngq9kwXy5y/VRD+gypWI4HKdTeMkH7SsC7zpuYWd1ISoaEsu+Cg57XburPa5JCiUj\n7ReRBF5LU2c7HeskWxLKe14UtH3luxH1nEzChfOH/wTkCmyGLXcMpGeXqecmlAlE\ndrfA/jTHPcphxsqUCfNyhFyedxO41tceP5gxxBhg9DFYZY0wqGVxcaP7GiiqVgRU\n3wAsJoeHAgMBAAECggEACjQgtDj3d33BBAeR2sCF88ZRZ/v2aCBwJhRT5LbZxQao\ns15iCfU+OEH5iKT8Mtluov25CndN2KmVGgrv98sUWaraGAwpt6QrY1EDaBfkYyBQ\nRvXhyO3bu60jfuzQUmtyV0uoRnSwvFKDTk8++WC1pkqLbUN3E/wvjana5be8S7RT\nvCjvzPrBP2faCDTP3RKUFT3dCXiYog62h1363Pb9mMfMFCYNkQnflw0PwkO9AZur\nDLgShJVfkkhxGdPFEY6mwe9/68g3BkdViOp/I3AptxhJBxrt3XEaYJyF2jsv86pA\nIUxpb9aO13mK4jdftrm/IJLHhl7ojdmLewL7zdku0QKBgQDUIKCIflejYqLhaxq6\n+xCghxekHVhNxbyhwFrtzfNwIJ87dBCY/wtugtqkQLR1Ba2kV/Ltw4u+ChM5sLsf\nozq/gXdZZI0hqWbLc/erXlKhZhomUkfHqPI/lXgAp1HwPEeEV5t7j7OiuAxW22hS\nw4g6lF0voyID12cyFKpivlXC4wKBgQC/JXMzGEQVMRuax4kZgAG6H1PmW/SHhaWE\n9emVonQYQt+IjVHa/izMm0OpvXl4PYKn7EwpO9x9D8659r5UNBgrkCHoSSzZ9B7S\nWr3c2gqzzazpGZBqVrijY1w/a91WARhezxjZjkw0SyQaSmd27wm90qgIlieBEGka\nAjVqFN12DQKBgE7tqO3AnNlFPTfEw1hpTIF+YpSE+rNNbOd+jBbJt9ezu6vCft5+\nn4FKHRJapQqZx0dMFi7TwK5AT3D6ylV2Rci14nOXj0/EGWSATNotqW82b2ps2Rp4\nSVLRSapsl3dc5nteoZKzIHLeKnEzCDkrWgf55kZwW5q0Tkh7Gf7NtVljAoGAKCQy\nPCG1conclTWgKhXCxxZ7JR5cjPVZHEIUatMx9EJe9StQbGACgnl8zTG4R7MLND6g\ng+xJUo42SMFzmPVTuhpLtJ9hZugobN6XjsDPjJD95fnzZRGPNujP35XEZqJWPtrZ\nCh8jC7xX+Zl0fvqWHiIWHa+C3kzW9ZpPI1b8ZyUCgYAmh7g9xYX3xw5QyeQLt0CZ\nfKp5u4GM5qEAWYeKT3swmHG3aK8UX5AErn4VMzkp3M0jhD4gdB97qqRryTjkgVTK\nYPvr03sXoBmatFESyPOzXCv9yE4FVmX6f9Xhg/0ltFVmj7ILXjcI9Bjsj+zbXhJQ\nMz77JfDxOb7uLKoFpXh/Xg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "head-317@tidy-apricot-166922.iam.gserviceaccount.com",
+  "client_id": "108106368561181367508",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/head-317%40tidy-apricot-166922.iam.gserviceaccount.com"
+}
+
