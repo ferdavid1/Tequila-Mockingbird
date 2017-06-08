@@ -8,6 +8,7 @@
 		- bottom (brown) wire of servo -> Header 5 
 		- middle (red) wire of servo -> Header 1
 		- top (orange) wire of servo -> GPIO (Header 8) 
+	- Bird model: https://www.youtube.com/watch?v=QZfz_5NCYGg
 - tensorflow LSTM Neural Network generates songs from MIDI input
 	- To run on raspberry pi, you must use the Pi version of tensorflow! https://github.com/samjabrahams/tensorflow-on-raspberry-pi
 - program initializes with command 'Tequila'
