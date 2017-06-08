@@ -3,7 +3,7 @@
 - Run on Raspberry Pi 3
 - Written in Python using Google Cloud Voice
 - Utilizing USB Microphone and MIDI input
-- Pi servo controls beak of 3D printed bird
+- Pi servo controls beak of an origami bird!
 	- Servo wiring:
 		- bottom (brown) wire of servo -> Header 5 
 		- middle (red) wire of servo -> Header 1
