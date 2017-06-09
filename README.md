@@ -29,3 +29,6 @@
   		- scramble the midi file somehow and save each midi scramble as a file and put it in the dataset
   - Determine if output will be just playing the wave file from python, or some kind of synthetic bird song (optimal, but wayyyy harder. You'd have to find a library of birds singing certain keys, and map the midi note output to each bird note)
 
+# Future Developments
+ - Use Reinforcement learning techniques to teach the LSTM model harmony (https://magenta.tensorflow.org/2016/11/09/tuning-recurrent-networks-with-reinforcement-learning) (https://github.com/tensorflow/magenta/tree/master/magenta/models/rl_tuner)
+
