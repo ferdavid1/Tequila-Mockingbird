@@ -1,13 +1,15 @@
-# Tequila Mockingbird
-- Program that can 'listen' to any short melody and identify notes, create a short song from it
+# Tequila Mockingbird: Birdsong Melody Acquisition and Kinetic Origami
+- Program that can 'listen' to any short melody, create its own original song from it using a LSTM neural net and Reinforcement Learning
 - Run on Raspberry Pi 3
 - Written in Python using Google Cloud Voice
 - Utilizing USB Microphone and MIDI input
-- Pi servo controls beak of 3D printed bird
+- Pi servo controls beak of an origami bird!
 	- Servo wiring:
 		- bottom (brown) wire of servo -> Header 5 
 		- middle (red) wire of servo -> Header 1
 		- top (orange) wire of servo -> GPIO (Header 8) 
+	- Bird model: https://www.youtube.com/watch?v=QZfz_5NCYGg
+	- Kinetic Origami example: https://www.youtube.com/watch?v=QZfz_5NCYGg
 - tensorflow LSTM Neural Network generates songs from MIDI input
 	- To run on raspberry pi, you must use the Pi version of tensorflow! https://github.com/samjabrahams/tensorflow-on-raspberry-pi
 - program initializes with command 'Tequila'
@@ -27,4 +29,7 @@
   		- copy the input midi file a ton of times, put into dataset
   		- scramble the midi file somehow and save each midi scramble as a file and put it in the dataset
   - Determine if output will be just playing the wave file from python, or some kind of synthetic bird song (optimal, but wayyyy harder. You'd have to find a library of birds singing certain keys, and map the midi note output to each bird note)
+
+# Future Developments
+ - Use Reinforcement learning techniques to teach the LSTM model harmony (https://magenta.tensorflow.org/2016/11/09/tuning-recurrent-networks-with-reinforcement-learning) (https://github.com/tensorflow/magenta/tree/master/magenta/models/rl_tuner)
 
