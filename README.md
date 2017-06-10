@@ -1,5 +1,5 @@
 # Tequila Mockingbird: Birdsong Melody Acquisition and Kinetic Origami
-- Program that can 'listen' to any short melody and identify notes, create a short song from it
+- Program that can 'listen' to any short melody, create its own original song from it using a LSTM neural net and Reinforcement Learning
 - Run on Raspberry Pi 3
 - Written in Python using Google Cloud Voice
 - Utilizing USB Microphone and MIDI input
