@@ -16,7 +16,8 @@
 - Name inspired by the novel To Kill a Mockingbird
 
 - TO DO:
-  -Set up MIDI interfacing
+  - Set up pi server (from sensei)! You're not going to be able to run this super long script on the pi. Pi server will execute servo motion from cpu script. This also means you don't have to have any of the data on the raspberry pi, which I don't think it would even be able to hold that much data in the first place. Try to setup GPU on laptop.
+  - Set up MIDI interfacing
   	- Use WAV to midi script! (Use BPM script to get BPM parameter)
     - Write tensorflow music generator script (adapt from Siraj Raval's music generation tutorial on youtube) (https://github.com/llSourcell/AI_Composer)
       - to use the demo script, use 'import _pickle as cPickle' to use pickle
