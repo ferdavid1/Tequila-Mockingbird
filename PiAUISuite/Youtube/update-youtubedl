@@ -1,7 +1,0 @@
-#!/bin/sh
-        #
-        # cron script to save a update youtube-dl.
-        #
-        # Written by Steven Hickson <help@stevenhickson.com> for the playvideo project.
-        #
-	    youtube-dl -U
