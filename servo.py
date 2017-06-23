@@ -1,6 +1,8 @@
 import RPi.GPIO as GPIO
 import time
+import os
 
+os.system('aplay -r 48000 Tequila.wav')
 GPIO.setmode(GPIO.BOARD)
 
 GPIO.setup(7, GPIO.OUT)
