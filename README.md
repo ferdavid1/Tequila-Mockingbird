@@ -11,15 +11,12 @@
 	- Bird model: https://www.youtube.com/watch?v=QZfz_5NCYGg
 	- Kinetic Origami example: https://www.youtube.com/watch?v=QZfz_5NCYGg
 - tensorflow LSTM Neural Network generates songs from MIDI input
-	- To run on raspberry pi, you must use the Pi version of tensorflow! https://github.com/samjabrahams/tensorflow-on-raspberry-pi
 - program initializes with command 'Tequila'
 - Inspired by the Neuropsychology of birdsong creation
 - Bird Whistling Tequila source: The Jon and Zach Show, 2/25/1999 (https://www.youtube.com/watch?v=PyVJzcA1Kds)
 - Name inspired by the novel To Kill a Mockingbird
 
 - TO DO:
-  - Set up pi server (from sensei)! You're not going to be able to run this super long script on the pi. Pi server will execute servo motion from cpu script. This also means you don't have to have any of the data on the raspberry pi, which I don't think it would even be able to hold that much data in the first place. 
-  - use cygstart instead of aplay to play the tequila song wavfile (and commment out the aplay version for linux users of the program)
   - Set up MIDI interfacing
   	- Use WAV to midi script! (Use BPM script to get BPM parameter)
     - Write tensorflow music generator script (adapt from Siraj Raval's music generation tutorial on youtube) (https://github.com/llSourcell/AI_Composer)

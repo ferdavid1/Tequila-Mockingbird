@@ -11,7 +11,7 @@ p = GPIO.PWM(7,50) #pulse width modulation
 p.start(20)
 
 try:
-	while True:
+	for x in range(10):
 		p.ChangeDutyCycle(7.5)
 		time.sleep(.2)
 		p.ChangeDutyCycle(12.5)
