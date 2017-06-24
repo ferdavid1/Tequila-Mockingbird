@@ -10,7 +10,7 @@
 		- top (orange) wire of servo -> GPIO (Header 8) 
 	- Bird model: https://www.youtube.com/watch?v=QZfz_5NCYGg
 	- Kinetic Origami example: https://www.youtube.com/watch?v=QZfz_5NCYGg
-- tensorflow LSTM Neural Network generates songs from MIDI input
+- tensorflow attentional LSTM Neural Network generates songs from MIDI input (Google Brain Magenta)
 - program initializes with command 'Tequila'
 - Inspired by the Neuropsychology of birdsong creation
 - Bird Whistling Tequila source: The Jon and Zach Show, 2/25/1999 (https://www.youtube.com/watch?v=PyVJzcA1Kds)
@@ -19,15 +19,17 @@
 - TO DO:
   - Set up MIDI interfacing
   	- Use WAV to midi script! (Use BPM script to get BPM parameter)
-    - Write tensorflow music generator script (adapt from Siraj Raval's music generation tutorial on youtube) (https://github.com/llSourcell/AI_Composer)
-      - to use the demo script, use 'import _pickle as cPickle' to use pickle
-      - to do this, use tensorflow for raspberry pi module on github
   	- How to get a large dataset to train on from just the input file? 
-  		- get a ton of wavs of bird songs, convert to MIDI using script
+      - Use the lakh midi dataset for melody generation
   		- copy the input midi file a ton of times, put into dataset
-  		- scramble the midi file somehow and save each midi scramble as a file and put it in the dataset
-  - Determine if output will be just playing the wave file from python, or some kind of synthetic bird song (optimal, but wayyyy harder. You'd have to find a library of birds singing certain keys, and map the midi note output to each bird note)
+      - after the neural net is trained, determine how similar the output file is to the input original, as opposed to random other ones from the lakh dataset. 
+  - Determine if output will be just playing the wave file from python, or some kind of synthetic bird song (optimal, but wayyyy harder).
+     You'd have to find a library of birds singing certain keys, and map the midi note output to each bird note)
+     Create it! using https://academy.allaboutbirds.org/birdsong/
+     For:
+      white-throated sparrows song, transposed across all keys
 
 # Future Developments
  - Use Reinforcement learning techniques to teach the LSTM model harmony (https://magenta.tensorflow.org/2016/11/09/tuning-recurrent-networks-with-reinforcement-learning) (https://github.com/tensorflow/magenta/tree/master/magenta/models/rl_tuner)
+ - Compare to https://github.com/shiba24/birdsong-generation-project
 
