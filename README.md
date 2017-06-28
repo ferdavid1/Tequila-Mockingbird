@@ -1,5 +1,5 @@
 # Tequila Mockingbird: Birdsong Melody Acquisition and Kinetic Origami
-- Program that can 'listen' to any short melody, create its own original song from it using a LSTM neural net and Reinforcement Learning
+- Program that can 'listen' to any short melody, recreate it from scratch using Reinforcement Learning
 - Run on Raspberry Pi 3
 - Written in Python using Google Cloud Voice
 - Utilizing USB Microphone and MIDI input
@@ -10,7 +10,6 @@
 		- top (orange) wire of servo -> GPIO (Header 8) 
 	- Bird model: https://www.youtube.com/watch?v=QZfz_5NCYGg
 	- Kinetic Origami example: https://www.youtube.com/watch?v=QZfz_5NCYGg
-- tensorflow attentional LSTM Neural Network generates songs from MIDI input (Google Brain Magenta)
 - program initializes with command 'Tequila'
 - Inspired by the Neuropsychology of birdsong creation
 - Bird Whistling Tequila source: The Jon and Zach Show, 2/25/1999 (https://www.youtube.com/watch?v=PyVJzcA1Kds)
