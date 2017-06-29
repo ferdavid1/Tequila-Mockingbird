@@ -100,6 +100,7 @@ def bpm_detector(data,fs):
     
     
 def final(filename):
+    window = 3
     samps,fs = read_wav(filename)
     
     data = []
@@ -107,11 +108,11 @@ def final(filename):
     bpm = 0
     n=0;
     nsamps = len(samps)
-    window_samps = int(args.window*fs)         
+    window_samps = int(window*fs)         
     samps_ndx = 0;  #first sample in window_ndx 
     max_window_ndx = nsamps / window_samps;
     bpms = numpy.zeros(max_window_ndx)
-
+    max_window_ndx = int(max_window_ndx)
     #iterate through all windows
     for window_ndx in range(0,max_window_ndx):
 

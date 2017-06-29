@@ -4,6 +4,9 @@ import os
 from bpm import final
 def get_bpm(file):
 	return final(file)
-def get_midi(infile, outfile, bpm):
+def get_midi(infile, outfile):
 	bpm = get_bpm(infile)
-	os.system('python audio_to_midi_melodia.py '+infile+' '+outfile+' '+int(bpm)+' --smooth 0.25 --minduration 0.05 --jams')
+	command = 'python convert_to_midi.py '+infile+' '+outfile+' '+str(bpm)+' --smooth 0.25 --minduration 0.05 --jams'
+	os.system(command)
+
+get_midi('input_song.wav', 'midi_song.mid')
