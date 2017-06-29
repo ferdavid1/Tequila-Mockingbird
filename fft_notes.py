@@ -31,9 +31,6 @@ def extract(filename):
     fpeaks = peaks(w, np.arange(9000,24000,1000))
     id_freq = [freqs[x] for x in fpeaks]
     id_hz = [abs(x * sample_rate) for x in id_freq]
-    # freq_in_hertz = 
-    # print(freq_in_hertz)
-    # [26865, 83991, 101873, 111138, 141505, 154264]
     notes = list(map(pitch, id_hz))
     return notes
 
