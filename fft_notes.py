@@ -33,7 +33,7 @@ def extract(filename):
     # print(freq_in_hertz)
     # [26865, 83991, 101873, 111138, 141505, 154264]
     notes = list(map(pitch, id_hz))
-    print(notes)
+    return notes
 
-extract('input_song.wav')
+# extract('input_song.wav')
 

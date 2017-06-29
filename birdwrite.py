@@ -6,8 +6,14 @@ def tweety(array_notes):
 		if x not in allowed:
 			print(x, 'is not a valid note')
 
+	new_notes = []
+	for a in array_notes:
+		tostrip = [s for s in a if s.isdigit()]
+		new = a.strip(str(tostrip))
+		new_notes.append(new)
 
-	infiles = [x + '.wav' for  x in array_notes]
+	infiles = [x + '.wav' for  x in new_notes]
+	# infiles = infiles[:5] # limiting it to five notes
 	outfile = "birdsong.wav"
 
 	data= []
@@ -25,4 +31,5 @@ def tweety(array_notes):
 # the beginning of iron man
 # tweety(['E', 'G', 'G', 'A', 'A', 'C', 'B','C','B','C','G','G','A','A'])
 
+# tweety(['E8', 'G9', 'A#9', 'F#9', 'D#9', 'A#7', 'C#6'])
 
