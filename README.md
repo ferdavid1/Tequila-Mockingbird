@@ -14,6 +14,7 @@
 - Inspired by the Neuropsychology of birdsong creation
 - Bird Whistling Tequila source: The Jon and Zach Show, 2/25/1999 (https://www.youtube.com/watch?v=PyVJzcA1Kds)
 - Name inspired by the novel To Kill a Mockingbird
+- Melody extraction by J. Salamon and E. Gómez, "Melody Extraction from Polyphonic Music Signals using Pitch Contour Characteristics", IEEE Transactions on Audio, Speech and Language Processing, 20(6):1759-1770, Aug. 2012.
 
 - TO DO:
   - Set up MIDI interfacing
