@@ -44,7 +44,7 @@ r = sr.Recognizer()
 with sr.AudioFile('sound_file.wav') as source:
     audio = r.record(source) 
     r.adjust_for_ambient_noise(source)
-    with open(r"cred.json", "r") as f:  
+    with open(r"../google_cred.json", "r") as f:  
         credentials_json = f.read()
         try:
             answer = r.recognize_google_cloud(audio, credentials_json=credentials_json, language='en-US')
