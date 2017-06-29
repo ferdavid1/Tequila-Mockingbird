@@ -88,4 +88,5 @@ if answer == 'bird ': # change to tequila for demo
     s_waveFile.close()
 
     notes = fft_notes(S_WAVE_OUTPUT_FILENAME)
-    
+    tweety(notes)
+    os.system('cygstart birdsong.wav')

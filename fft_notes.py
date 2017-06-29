@@ -15,6 +15,8 @@ def pitch(freq):
     n = h % 12
     return name[n] + str(octave)
 
+def Q():
+	pass
 def extract(filename):
     sample_rate, wav_file = wave.read(filename, 'r')
     x = np.array(wav_file)
