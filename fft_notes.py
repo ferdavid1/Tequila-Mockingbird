@@ -17,7 +17,6 @@ def pitch(freq):
 
 def extract(filename):
     sample_rate, wav_file = wave.read(filename, 'r')
-    sample_rate = sample_rate
     x = np.array(wav_file)
     w = np.fft.fft(x)
     w = np.abs(w)
@@ -25,14 +24,16 @@ def extract(filename):
     plt.plot(w)
     plt.show()
     freqs = np.fft.fftfreq(len(w)) 
-    fpeaks = peaks(w, np.arange(9000,22000,1000))
-    print(fpeaks)
-    # idx = np.argmax(w)
-    # print(idx)
-    # freq = freqs[idx]
-    # freq_in_hertz = abs(freq * sample_rate)
+
+    ### use the Q learning here? to adjust the peak widths?
+    fpeaks = peaks(w, np.arange(9000,24000,1000))
+    id_freq = [freqs[x] for x in fpeaks]
+    id_hz = [abs(x * sample_rate) for x in id_freq]
+    # freq_in_hertz = 
     # print(freq_in_hertz)
-    # [26811, 27047, 84503, 111014, 154434]
+    # [26865, 83991, 101873, 111138, 141505, 154264]
+    notes = list(map(pitch, id_hz))
+    print(notes)
 
 extract('input_song.wav')
 
