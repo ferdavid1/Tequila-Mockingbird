@@ -2,9 +2,9 @@ import wave
 
 def tweety(array_notes):
 	allowed = ['A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#']
-	for x in array_notes:
-		if x not in allowed:
-			print(x, 'is not a valid note')
+	# for x in array_notes:
+	# 	if x not in allowed:
+	# 		print(x, 'is not a valid note')
 
 	new_notes = []
 	for a in array_notes:
@@ -13,7 +13,7 @@ def tweety(array_notes):
 		new_notes.append(new)
 
 	infiles = [x + '.wav' for  x in new_notes]
-	infiles = infiles[:6] # limiting it to five notes
+	infiles = infiles[:4] # limiting it to five notes
 	outfile = "birdsong.wav"
 
 	data= []

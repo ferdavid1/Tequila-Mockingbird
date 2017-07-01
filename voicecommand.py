@@ -60,7 +60,7 @@ except NameError:
     print('try again')
 if answer == 'bird ': # change to tequila for demo
     subprocess.call('cygstart Tequila.wav')
-    exec(open('client.py').read())
+    # exec(open('client.py').read())
     time.sleep(10)
     S_RECORD_SECONDS = 5
     S_WAVE_OUTPUT_FILENAME = "input_song.wav"
