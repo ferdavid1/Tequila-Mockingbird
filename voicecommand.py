@@ -1,11 +1,5 @@
 import speech_recognition as sr 
 import pyaudio
-import subprocess
-import wave
-import os
-import time
-from fft_notes import extract
-from birdwrite import tweety
  
 FORMAT = pyaudio.paInt16
 CHANNELS = 2
@@ -20,15 +14,17 @@ audio = pyaudio.PyAudio()
 stream = audio.open(format=FORMAT, channels=CHANNELS,
                 rate=RATE, input=True,
                 frames_per_buffer=CHUNK, )
-print ("recording command...")
+print("recording command...")
 frames = []
  
 for i in range(0, int(RATE / CHUNK * RECORD_SECONDS)):
     data = stream.read(CHUNK)
     frames.append(data)
-print ("finished recording")
+print("finished recording")
  
- 
+import wave
+import os
+import time
 # stop Recording
 stream.stop_stream()
 stream.close()
@@ -52,9 +48,18 @@ with sr.AudioFile('sound_file.wav') as source:
             print("Google Cloud Speech could not understand audio")
         except sr.RequestError as e:
             print("Could not request results from Google Cloud Speech service; {0}".format(e))
+        except:
+            print('Some other error occured.')
 
-print(answer)
+import subprocess
+from fft_notes import extract
+from birdwrite import tweety
+try:
+    print(answer)
+except NameError:
+    print('try again')
 if answer == 'bird ': # change to tequila for demo
+    subprocess.call('cygstart Tequila.wav')
     exec(open('client.py').read())
     time.sleep(10)
     S_RECORD_SECONDS = 5
@@ -87,6 +92,8 @@ if answer == 'bird ': # change to tequila for demo
     s_waveFile.writeframes(b''.join(s_frames))
     s_waveFile.close()
 
-    notes = fft_notes(S_WAVE_OUTPUT_FILENAME)
+    notes = extract(S_WAVE_OUTPUT_FILENAME)
     tweety(notes)
     os.system('cygstart birdsong.wav')
+else:
+    print('Sorry, who are you?')
