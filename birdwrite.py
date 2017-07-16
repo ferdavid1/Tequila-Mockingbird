@@ -2,9 +2,10 @@ import wave
 
 def tweety(array_notes):
 	allowed = ['A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#']
-	# for x in array_notes:
-	# 	if x not in allowed:
-	# 		print(x, 'is not a valid note')
+	for x in array_notes:
+		if array_notes.count(x) > 1:
+			for y in range(array_notes.count(x) - 1):
+				array_notes.remove(x)
 
 	new_notes = []
 	for a in array_notes:
@@ -31,5 +32,5 @@ def tweety(array_notes):
 # the beginning of iron man
 # tweety(['E', 'G', 'G', 'A', 'A', 'C', 'B','C','B','C','G','G','A','A'])
 
-# tweety(['E8', 'G9', 'A#9', 'F#9', 'D#9', 'A#7', 'C#6'])
+tweety(['A8', 'A8', 'A8', 'A8', 'A8', 'A8', 'A8', 'A8', 'F#9', 'A#9', 'D#9', 'B8', 'C8'])
 
