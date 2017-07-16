@@ -13,7 +13,7 @@ def tweety(array_notes):
 		new = a.strip(str(tostrip))
 		new_notes.append(new)
 
-	infiles = [x + '.wav' for  x in new_notes]
+	infiles = ['song_notes/' + x + '.wav' for  x in new_notes]
 	infiles = infiles[:4] # limiting it to five notes
 	outfile = "birdsong.wav"
 
