@@ -32,5 +32,5 @@ def tweety(array_notes):
 # the beginning of iron man
 # tweety(['E', 'G', 'G', 'A', 'A', 'C', 'B','C','B','C','G','G','A','A'])
 
-tweety(['A8', 'A8', 'A8', 'A8', 'A8', 'A8', 'A8', 'A8', 'F#9', 'A#9', 'D#9', 'B8', 'C8'])
+# tweety(['A8', 'A8', 'A8', 'A8', 'A8', 'A8', 'A8', 'A8', 'F#9', 'A#9', 'D#9', 'B8', 'C8'])
 

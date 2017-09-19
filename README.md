@@ -15,5 +15,5 @@
 - Bird Whistling Tequila source: The Jon and Zach Show, 2/25/1999 (https://www.youtube.com/watch?v=PyVJzcA1Kds)
 - Name inspired by the novel To Kill a Mockingbird
 - Melody translated into a white-throated sparrows song, by transposing the original soundbite across all keys
-
+- White Throated Sparrow original sample from the Cornell Macaulay Lab online repository
 
