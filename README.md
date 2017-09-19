@@ -9,7 +9,7 @@
 		- middle (red) wire of servo -> Header 1
 		- top (orange) wire of servo -> GPIO (Header 8) 
 	- Bird model: https://www.youtube.com/watch?v=QZfz_5NCYGg
-	- Kinetic Origami example: https://www.youtube.com/watch?v=QZfz_5NCYGg
+	- Kinetic Origami example: https://www.youtube.com/watch?v=aOoS45YFl5k
 - program initializes with command 'Tequila'
 - Inspired by the Neuropsychology of birdsong creation
 - Bird Whistling Tequila source: The Jon and Zach Show, 2/25/1999 (https://www.youtube.com/watch?v=PyVJzcA1Kds)
