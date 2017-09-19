@@ -1,5 +1,6 @@
 import speech_recognition as sr 
 import pyaudio
+import os
  
 FORMAT = pyaudio.paInt16
 CHANNELS = 2
@@ -58,10 +59,10 @@ try:
     print(answer)
 except NameError:
     print('try again')
-if answer == 'bird ': # change to tequila for demo
-    subprocess.call('cygstart Tequila.wav')
-    # exec(open('client.py').read())
-    time.sleep(10)
+if answer == 'tequila ': # change to tequila for demo
+    os.system('aplay Tequila.wav')
+    exec(open('client.py').read())
+    time.sleep(8)
     S_RECORD_SECONDS = 5
     S_WAVE_OUTPUT_FILENAME = "input_song.wav"
      
@@ -94,6 +95,6 @@ if answer == 'bird ': # change to tequila for demo
 
     notes = extract(S_WAVE_OUTPUT_FILENAME)
     tweety(notes)
-    os.system('cygstart birdsong.wav')
+    os.system('aplay birdsong.wav')
 else:
     print('Sorry, who are you?')

@@ -1,9 +1,9 @@
 import socket
 
 s = socket.socket()
-host = '192.168.0.16'
+host = '192.168.1.27'
 print (host)
-port = 12345
+port = 22
 
 s.connect((host, port))
 print (s.recv(1024))
